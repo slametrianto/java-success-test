@@ -4,6 +4,7 @@
 
 
 private void getDropListKategori(RoutingContext context) {
+final JsonObject principalUser = context.user().principal();
 	responseBody = new JsonObject();
 		final JsonObject requestBody =new JsonObject(context.getBodyAsString());
 		final JsonObject jsonReqColumn =requestBody.getJsonObject(Dukcapil.KEY_REQ_TABLE);
