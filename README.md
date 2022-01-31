@@ -12,4 +12,14 @@ private void getDropListKategori(RoutingContext context) {
 		responseBody.put(Dukcapil.KEY_REQ_TABLE, jsonReqColumn);
 		responseClientSuccess(context, responseBody);	
 	}
+	
+	
+	
+	///success yg betul
+	
+	final JsonObject principalUser = context.user().principal();
+	responseBody =new JsonObject();
+		
+	responseClientSuccess(context, responseBody);
+	responseClientError(context, responseBody);
 		
